@@ -1,0 +1,308 @@
+.jumbotron {
+  height: 30em;
+}
+/*.text-center {
+  margin-top: 50px; 
+}*/
+
+/*Image Container
+.image_preview{
+    display: none;
+    width: 160%;
+}
+.imagediv{
+    width: 300px;
+    min-height: 150px;
+    border: 2px solid darkgray;
+    margin-top: 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color:darkgray;
+}
+.image_preview:hover{
+    background-color: dimgrey;
+}
+.nav{
+  height: 46px; 
+  font-size: 16px;
+}*/
+
+/*----------------------------------------------Banner-----------------------------------------------------------------*/
+.img-fluid {
+  width: 100%;
+}
+.display-1,
+.display-5 {
+  font-family: Brush Script MT;
+}
+
+.display-6 {
+  font-family: Garamond;
+}
+
+.carousel,
+.item,
+.active {
+  height: 100%;
+  margin-bottom: 60px;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+/*----------------------------------------------------Image hover-------------------------------------*/
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  border: solid;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4caf50;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 15px 30px;
+}
+
+/*----------------------------------------------Event details------------------------------------------------------------*/
+.tab-pane {
+  height: 253px;
+}
+/*
+.container-sm{
+  background-color: rgb(226, 235, 235); 
+  padding-bottom: 1px;
+  margin-top: 5px;
+}
+*/
+/*
+.container-sm  {
+  padding-top: 45px;
+}
+.container-sm .nav-item {
+  width: 200px;
+    height: 45px;
+    border-width: 0px;
+}
+.container-sm .nav-item :hover{
+  border-bottom: 3px solid rgb(66, 62, 62);
+  
+}
+.container-sm .tab-pane{
+  height: 150px;
+}*/
+
+/*--------------------------------------------Navbar eventdetails--------------------------------------------------------*/
+/*
+.container-fluid .nav-item{
+  width: 5rem;
+}
+.container-md .nav-item .nav-link{
+  color: black;
+}*/
+
+/*template image thumbnail
+.row.img-thumbnail{
+  width:360px ;
+  height:260px ;
+}*/
+/*
+.container-md  {
+  display: flex;
+  flex-wrap: wrap;
+}
+ .row .col-sm{
+  flex: 33.3%;
+  width: auto;
+  padding: 0 4px;
+  overflow: hidden;
+}
+.row .col-sm .img-thumbnail{
+margin-top: 2%;
+width: 100%;
+height: 100%;
+cursor: pointer;
+border-radius: 5px;
+filter: grayscale(1) brightness(0.5);
+}
+.row .col-sm .img-thumbnail:hover{
+filter: grayscale(0) brightness(1);
+}*/
+
+/* top navbar
+.container-fluid a{
+  margin-bottom: 0;
+  width: 47px;
+} 
+*/
+
+/* Carousel 
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+.nav-item li{
+    height: 0%;
+}*/
+
+/* --------------------------------------------------Carousel base class ------------------------------------------------*/
+.carousel-inner:hover .carousel-item {
+  opacity: 1;
+}
+
+.carousel-inner {
+  position: absolute;
+}
+
+.carousel-item {
+  opacity: 1;
+}
+
+#buttonCarousel {
+  position: relative;
+
+  left: 40%;
+  transform: translate(50%, -50%);
+  opacity: 1;
+}
+
+.carousel-inner:hover #buttonCarousel {
+  opacity: 1;
+}
+
+.carousel {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+/* Since positioning the image, we need to help out the caption 
+  .carousel-caption {
+    z-index: 10;
+  }*/
+
+/* Declare heights because of positioning of img element 
+  .carousel .item {
+    height: 500px;
+    background-color: #777;
+    background-attachment: fixed;
+    
+  }
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+    background-size: cover;
+
+  }*/
+/* ------------------------------------------------------Modal Slide Left----------------------------------------------- */
+
+.modal-dialog-slideout {
+  min-height: 100%;
+  margin: 0 0 0 auto;
+  background: #fff;
+}
+
+.modal.fade .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(100%, 0) scale(1);
+  transform: translate(100%, 0) scale(1);
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  display: flex;
+  align-items: stretch;
+  -webkit-box-align: stretch;
+  height: 100%;
+}
+
+.modal.fade.show .modal-dialog.modal-dialog-slideout .modal-body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.modal-dialog-slideout .modal-content {
+  border: 0;
+}
+
+.modal-dialog-slideout .modal-header,
+.modal-dialog-slideout .modal-footer {
+  height: 69px;
+  display: block;
+}
+.modal-dialog-slideout .modal-header h5 {
+  float: left;
+}
+
+/*-----------------------------------------------------image upload------------------------------------------------------*/
+#showgalleryImg {
+  display: flex;
+  transition: 0.5s;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.imgHolder {
+  display: inline-block !important;
+  position: relative;
+  margin: 10px;
+}
+
+.appendedImg {
+  height: 240px;
+  width: 240px;
+  margin: 0px;
+  border: solid black;
+}
+
+.closeIT_removeImg {
+  padding: 0.3rem 0.5rem;
+  border-radius: 7px;
+  background: red;
+  color: white;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  cursor: pointer;
+}
+
+/*---------------------------------------------------template container color--------------------------------------------*/
